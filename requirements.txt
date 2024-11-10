@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+selenium
+webdriver_manager
+Flask
+flask-cors
+transformers
+torch
+pandas

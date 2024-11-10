@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarization and Categorization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="theme-toggle">
+        <button id="theme-toggle-button">Switch to Light Mode</button>
+    </div>
+    <div class="container">
+        <header>
+            <h1>News Summarizer</h1>
+            <p>Get concise summaries and categories of news articles</p>
+        </header>
+        <main>
+            <form id="scrape-form">
+                <label for="news-url">Enter News URL:</label>
+                <input type="text" id="news-url" name="url" placeholder="https://example.com/news" required>
+                <button type="submit">Scrape and Summarize</button>
+            </form>
+            <div id="loading" class="loading" style="display: none;"></div>
+            <div id="percentage-meter" class="percentage-meter" style="display: none;">0%</div>
+            <div id="result" class="result"></div>
+        </main>
+        <footer>
+            <p>© 2023 News Summarizer. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
